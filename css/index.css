@@ -1,0 +1,128 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background:#fff;
+}
+.header .header-main {
+    width: 1152px;
+    height: 80px;
+    margin: 0 auto;
+}
+.header .header-main h1 {
+    height: 80px;
+    width: 130px;
+    padding-top: 17px;
+}
+.header .header-main a {
+    text-indent:-999em;
+    background: url(../img/logo-yuan.png) no-repeat;
+    width: 130px;
+    height: 63px;
+    display: block;
+}
+.header .header-main .nav {
+    margin-left: 239px;
+    width: 400px;
+    height: 80px;
+}
+.header .header-main .nav li {
+    position: relative;
+    cursor: pointer;
+    font-weight: 550;
+    float: left;
+    font-size: 16px;
+    line-height: 80px;
+    height: 80px;
+    width: 50px;
+    text-align: center;
+    margin-right: 55px;
+    color: #545c7b;
+}
+.header .header-main .nav li:hover {
+    color: #149cb8;
+}
+.header .header-main .nav li:hover::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 22px;
+    border-bottom: 3px solid #149cb8;
+    top:60px;
+    left: 14px;
+}
+.header .header-main .nav li:last-child {
+    margin-right: 0;
+}
+.header .header-main .my-info {
+    cursor: pointer;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    color: #545c63;
+    width: 200px;
+    text-align:center;
+}
+.header .header-main .my-info span:hover {
+    color:#149cb8;
+}
+.content {
+    background: linear-gradient(#dfe1e2, #f3f5f6 1%);
+    position: relative;
+    height: 1330px;
+    width: 100%;
+}
+.content .content-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1152px;
+    height: 1237px;
+    margin: auto;
+}
+.content .content-main .info {
+    margin-right: 32px;
+    height: 1237px;
+    width: 800px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.content .content-main .info-rigth {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #58a 25%,#aaa 0,#aaa 50%, #58a 0, #58a 75%,#aaa 0);
+    background-size: 42px 42px;
+    width: 320px;
+    height: 1237px;
+}
+.content .content-main .info-rigth .company {
+    box-sizing:border-box;
+    box-shadow: 0 0 10px #ddd;
+    font-size: 0;
+    padding: 25px;
+    background: #e6f0f3;
+    border-radius: 10px;
+    height: 246px;
+    width: 100%;
+}
+.content .content-main .info-rigth .company h2 {
+    width: 100%;
+    height: 72px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 72px;
+}
+.content .content-main .info-rigth .company h2>img {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.content .content-main .info-rigth .company>img {
+    margin-top: 20px;
+}
+.footer {
+    width: 100%;
+    height: 98px;
+    background: #1c1f21;
+}

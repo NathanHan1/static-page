@@ -1,0 +1,19 @@
+/*共有的css*/
+/*利用伪类清除浮动的类名*/
+/*把clearfix这个类 加给浮动元素的父元素*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;/*兼容IE67*/
+}
+/*左浮动*/
+.fl{
+	float: left;
+}
+/*有浮动*/
+.fr{
+	float: right;
+}
