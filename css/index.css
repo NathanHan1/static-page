@@ -82,17 +82,64 @@
     margin: auto;
 }
 .content .content-main .info {
+    box-sizing: border-box;
     margin-right: 32px;
     height: 1237px;
     width: 800px;
     border-radius: 10px;
     background: #ffffff;
     box-shadow: 0 0 10px #ddd;
+    padding: 32px 44px;
 }
-
+.content .content-main .info {
+    padding: 32px 44px;
+}
+.content .content-main .info .img-wrapper {
+    position: relative;
+    background: url(../img/tiger.jpg) fixed;
+    background-size: 1012px;
+    border-radius: 5px;
+    width:712px;
+    height:1200px ;
+}
+/* 毛玻璃效果，使用伪类，使用filter:blur(),背景图固定fixed */
+.content .content-main .info .img-wrapper .text-wrapper {
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background: rgba(255,255,255,0.3);
+    padding: 40px 30px;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin:auto;
+    width: 584px;
+    height: 580px;
+}
+.content .content-main .info .img-wrapper .text-wrapper::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:0;right: 0;left: 0;bottom: 0;
+    background: url(../img/tiger.jpg) 0 / cover fixed;
+    filter:blur(30px);
+    margin:-40px;
+}
+.content .content-main .info .img-wrapper .text-wrapper>h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.content .content-main .info .img-wrapper .text-wrapper>p {
+    color: #000;
+    font-size:1.5em;
+    line-height: 1.6em;
+    font-style:italic;
+}
 .content .content-main .info-rigth {
     border-radius: 10px;
-    background: linear-gradient(45deg, #58a 25%,#aaa 0,#aaa 50%, #58a 0, #58a 75%,#aaa 0);
+    background: linear-gradient(45deg, #e6f0f3 25%,#cddde0 0,#cddde0 50%, #e6f0f3 0, #e6f0f3 75%,#cddde0 0);
     background-size: 42px 42px;
     width: 320px;
     height: 1237px;
@@ -100,29 +147,32 @@
 .content .content-main .info-rigth .company {
     box-sizing:border-box;
     box-shadow: 0 0 10px #ddd;
+    margin-bottom: 65px;
     font-size: 0;
     padding: 25px;
     background: #e6f0f3;
     border-radius: 10px;
     height: 246px;
     width: 100%;
+    background: url(../img/snow-leopard.jpg);
+    filter:sepia(1);
+    background-size: 420px;
 }
-.content .content-main .info-rigth .company h2 {
-    width: 100%;
-    height: 72px;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 72px;
+.content .content-main .info-rigth .company.pure {
+    filter:sepia(2) saturate(3) hue-rotate(198deg);
 }
-.content .content-main .info-rigth .company h2>img {
-    margin-top: 20px;
-    margin-left: 40px;
+.content .content-main .info-rigth .company.yellow {
+    filter: sepia(1) saturate(4) ;
 }
-.content .content-main .info-rigth .company>img {
-    margin-top: 20px;
+.content .content-main .info-rigth .company.red {
+    filter: sepia(1) saturate(4) hue-rotate(298deg);
 }
+.content .content-main .info-rigth .company.purple {
+    filter: sepia(1) saturate(4) hue-rotate(240deg);
+}
+
 .footer {
     width: 100%;
-    height: 98px;
+    height: 100px;
     background: #1c1f21;
 }
